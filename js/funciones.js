@@ -91,3 +91,50 @@ function validarContacto() {
     }
     return valido;
 }
+
+function validarHora() {
+    // 1. Leer los cinco campos de la solicitud.
+    var nombre = document.getElementById("nombreHora").value;
+    var correo = document.getElementById("correoHora").value;
+    var servicio = document.getElementById("servicioHora").value;
+    var fecha = document.getElementById("fechaHora").value;
+    var jornada = document.getElementById("jornadaHora").value;
+    var valido = true;
+
+    // 2. Borrar los resultados anteriores antes de volver a revisar.
+    document.getElementById("errorNombreHora").innerHTML = "";
+    document.getElementById("errorCorreoHora").innerHTML = "";
+    document.getElementById("errorServicioHora").innerHTML = "";
+    document.getElementById("errorFechaHora").innerHTML = "";
+    document.getElementById("errorJornadaHora").innerHTML = "";
+    document.getElementById("resultadoHora").innerHTML = "";
+
+    // 3. Revisar los datos uno por uno.
+    if (!tieneTexto(nombre) || nombre.length > 100) {
+        document.getElementById("errorNombreHora").innerHTML = "Escribe tu nombre, con un máximo de 100 caracteres.";
+        valido = false;
+    }
+    if (!correoValido(correo) || correo.length > 100) {
+        document.getElementById("errorCorreoHora").innerHTML = "Escribe un correo como nombre@correo.cl, de máximo 100 caracteres.";
+        valido = false;
+    }
+    if (servicio == "") {
+        document.getElementById("errorServicioHora").innerHTML = "Selecciona un servicio nutricional.";
+        valido = false;
+    }
+    if (fecha == "") {
+        document.getElementById("errorFechaHora").innerHTML = "Selecciona una fecha preferida.";
+        valido = false;
+    }
+    if (jornada == "") {
+        document.getElementById("errorJornadaHora").innerHTML = "Selecciona una jornada.";
+        valido = false;
+    }
+
+    // 4. Esta versión comprueba datos; no crea una reserva real.
+    if (valido) {
+        document.getElementById("resultadoHora").innerHTML = "Datos correctos. Revisión de práctica completada: no se ha reservado ni guardado una hora.";
+    }
+    return valido;
+}
+
