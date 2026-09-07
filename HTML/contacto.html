@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | NutriVida</title>
+    <!-- Todas las páginas comparten esta hoja de estilos. -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <p class="marca">NutriVida</p>
+            <p class="bajada">Clínica de nutrición · Temuco</p>
+        </div>
+    </header>
+    <!-- Los enlaces conectan archivos HTML de la misma carpeta. -->
+    <nav>
+        <div class="contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="contacto.html" class="actual">Contacto</a>
+            <a href="solicitar-hora.html">Solicitar hora</a>
+        </div>
+    </nav>
+    <main class="contenedor">
+        <section>
+            <p class="etiqueta">CONVERSEMOS</p>
+            <h1>Contacto</h1>
+            <p>Completa los campos para revisar tu consulta. El teléfono es opcional.</p>
+            <p class="nota">Formulario de práctica: tus datos no se envían ni se guardan.</p>
+            <form id="formularioContacto" onsubmit="return false;">
+                <p><label for="nombreContacto">Nombre completo</label><br>
+                <input type="text" id="nombreContacto" maxlength="100"></p>
+                <p id="errorNombreContacto" class="error"></p>
+                <p><label for="correoContacto">Correo electrónico</label><br>
+                <input type="email" id="correoContacto" maxlength="100" placeholder="nombre@correo.cl"></p>
+                <p id="errorCorreoContacto" class="error"></p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor">
+            <p><strong>NutriVida</strong> · Asesoría nutricional personalizada</p>
+            <p>Proyecto académico. Los formularios son una demostración.</p>
+        </div>
+    </footer>
+    <!-- JavaScript externo: funciones de validación. -->
+    <script src="../js/funciones.js"></script>
+</body>
+</html>
