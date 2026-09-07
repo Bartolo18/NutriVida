@@ -32,3 +32,16 @@ function correoValido(correo) {
     }
     return false;
 }
+
+function telefonoValido(telefono) {
+    if (telefono.length != 9) {
+        return false;
+    }
+    for (var i = 0; i < telefono.length; i++) {
+        if (telefono[i] < "0" || telefono[i] > "9") {
+            return false;
+        }
+    }
+    return true;
+}
+
