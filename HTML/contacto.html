@@ -37,7 +37,23 @@
                 <p><label for="correoContacto">Correo electrónico</label><br>
                 <input type="email" id="correoContacto" maxlength="100" placeholder="nombre@correo.cl"></p>
                 <p id="errorCorreoContacto" class="error"></p>
+                <p><label for="telefonoContacto">Teléfono (opcional, 9 dígitos)</label><br>
+                <input type="text" id="telefonoContacto" maxlength="9" placeholder="912345678"></p>
+                <p id="errorTelefonoContacto" class="error"></p>
+                <p><label for="motivoContacto">Motivo de la consulta</label><br>
+                <select id="motivoContacto">
+                    <option value="">Selecciona una opción</option>
+                    <option value="general">Información general</option>
+                    <option value="horarios">Horarios de atención</option>
+                    <option value="servicios">Servicios nutricionales</option>
+                </select></p>
+                <p id="errorMotivoContacto" class="error"></p>
+                <p><label for="mensajeContacto">Mensaje (máximo 500 caracteres)</label><br>
+                <textarea id="mensajeContacto" rows="5" maxlength="500"></textarea></p>
+                <p id="errorMensajeContacto" class="error"></p>
+
             </form>
+            
         </section>
     </main>
     <footer>
