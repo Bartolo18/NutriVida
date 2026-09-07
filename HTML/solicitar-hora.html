@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar hora | NutriVida</title>
+    <!-- Todas las páginas comparten esta hoja de estilos. -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <p class="marca">NutriVida</p>
+            <p class="bajada">Clínica de nutrición · Temuco</p>
+        </div>
+    </header>
+    <!-- Los enlaces conectan archivos HTML de la misma carpeta. -->
+    <nav>
+        <div class="contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="solicitar-hora.html" class="actual">Solicitar hora</a>
+        </div>
+    </nav>
+    <main class="contenedor">
+        <section>
+            <p class="etiqueta">TU PRÓXIMA CONSULTA</p>
+            <h1>Solicitar hora</h1>
+            <p>Indica tus datos y preferencias de atención. Todos los campos son obligatorios.</p>
+            <p class="nota">Esta demostración revisa los datos. No consulta disponibilidad ni reserva una cita real.</p>
+            <form id="formularioHora" onsubmit="return false;">
+                <p><label for="nombreHora">Nombre completo</label><br>
+                <input type="text" id="nombreHora" maxlength="100"></p>
+                <p id="errorNombreHora" class="error"></p>
+                <p><label for="correoHora">Correo electrónico</label><br>
+                <input type="email" id="correoHora" maxlength="100" placeholder="nombre@correo.cl"></p>
+                <p id="errorCorreoHora" class="error"></p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor">
+            <p><strong>NutriVida</strong> · Asesoría nutricional personalizada</p>
+            <p>Proyecto académico. Los formularios son una demostración.</p>
+        </div>
+    </footer>
+    <!-- JavaScript externo: funciones de validación. -->
+    <script src="../js/funciones.js"></script>
+</body>
+</html>
