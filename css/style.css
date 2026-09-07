@@ -40,6 +40,15 @@ input, select, textarea { width: 92%; padding: 10px; margin-top: 6px; border: 1p
 button { background-color: #19583b; color: #ffffff; border: 1px solid #19583b; border-radius: 4px; padding: 12px 18px; font-size: 16px; }
 .error { color: #a21d2c; font-size: 14px; margin: 4px 0 12px; }
 .exito { color: #19583b; font-weight: bold; }
+.nota { font-size: 14px; color: #53655a; }
+/* Cada error tiene un párrafo propio debajo de su campo. */
+form { max-width: 620px; border: 1px solid #ccdcd1; padding: 24px; border-radius: 6px; }
+label { font-weight: bold; }
+input, select, textarea { width: 92%; padding: 10px; margin-top: 6px; border: 1px solid #859b8c; border-radius: 4px; font-family: Arial, sans-serif; font-size: 16px; background-color: #ffffff; color: #27372d; }
+button { background-color: #19583b; color: #ffffff; border: 1px solid #19583b; border-radius: 4px; padding: 12px 18px; font-size: 16px; }
+.error { color: #a21d2c; font-size: 14px; margin: 4px 0 12px; }
+.exito { color: #19583b; font-weight: bold; }
+
 footer { background-color: #f0f6f2; border-top: 1px solid #ccdcd1; padding: 18px 0; font-size: 14px; }
 /* float permite ubicar texto e imagen uno al lado del otro. */
 .portada { overflow: auto; margin-top: 12px; margin-bottom: 40px; }
@@ -57,4 +66,8 @@ footer { background-color: #f0f6f2; border-top: 1px solid #ccdcd1; padding: 18px
     nav a { margin-right: 12px; }
     form { padding: 16px; }
     .servicio { padding: 16px; }
+
 }
+
+.servicio { border: 1px solid #ccdcd1; padding: 20px 24px; margin-bottom: 16px; border-radius: 6px; }
+.servicio h2 { margin: 4px 0 10px; }
